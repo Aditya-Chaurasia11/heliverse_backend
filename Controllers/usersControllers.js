@@ -61,7 +61,7 @@ exports.userget = async (req, res) => {
   const domain = req.query.domain || "";
   const sort = req.query.sort || "";
   const page = req.query.page || 1;
-  const ITEM_PER_PAGE = 6;
+  const ITEM_PER_PAGE = 10;
 
   const query = {
     fname: { $regex: search, $options: "i" },
